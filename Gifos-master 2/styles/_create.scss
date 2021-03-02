@@ -1,0 +1,99 @@
+/*********************
+* Create gifos
+**********************/
+
+#create-gifo {
+    margin: 0 2rem;
+    .camera-container {
+      border: 1px solid #572ee5;
+      max-width: 688px;
+      height: 390px;
+      margin: 24px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+  
+      h2 {
+        color: #572ee5;
+      }
+  
+      p {
+        color: #000000;
+      }
+  
+      div.div-hover-create {
+        position: absolute;
+        background-color: #572ee5;
+        opacity: 0.8;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+  
+        h2 {
+          color: #ffffff;
+          text-align: center;
+        }
+      }
+  
+      video {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  
+    .footer-create {
+      display: flex;
+      flex-direction: column;
+      .create-steps {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div.step-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 32px;
+          height: 32px;
+          border-radius: 32px;
+          border: 1px solid #572ee5;
+          background: transparent;
+          color: #572ee5;
+          margin: 0 13px;
+          text-align: center;
+          font-size: 18px;
+  
+          &.activate {
+            color: white;
+            background: #572ee5;
+          }
+        }
+      }
+  
+      span {
+        height: 6.9px;
+        max-width: 795px;
+        width: 100%;
+        margin: 20px auto;
+        border: 1px solid #572ee5;
+        border-radius: 6.9px;
+        background-color: #572ee5;
+      }
+  
+      button {
+        margin: 0 auto;
+      }
+    }
+  }
+  
+  .icon-success {
+    margin: 0 5px;
+    width: 18px;
+    height: 13px;
+    display: inline-block;
+    background: url("../images/ok.svg") no-repeat;
+  }
+  

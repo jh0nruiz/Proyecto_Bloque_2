@@ -1,0 +1,114 @@
+/********************
+* Dark Theme
+*********************/
+.dark {
+    background-color: #37383c;
+    color: #ffffff;
+  
+    ul#menu-container {
+      background-color: #000000;
+    }
+  
+    #section-searcher {
+      .search-container {
+        border: 1px solid #ffffff;
+      }
+  
+      .input-container {
+        input {
+          &,
+          &::placeholder,
+          &:focus {
+            color: #ffffff;
+          }
+        }
+  
+        div.icon-search {
+          background: url("../images/icon-search-mod-noc.svg") no-repeat;
+          &.search {
+            background: url("../images/close-modo-noct.svg") no-repeat;
+            height: 15px;
+          }
+        }
+      }
+    }
+  
+    button.btn-primary-ghost {
+      border: 1px solid #ffffff;
+      color: #ffffff;
+    }
+  
+    #section-trending-gifos {
+      background-color:  #222326;
+      h2,
+      p {
+        color: #ffffff;
+      }
+      .slider-trending-content {
+        div.slider-arrow-right {
+          background: url("../images/button-slider-right-md-noct.svg") no-repeat;
+          &:hover {
+            //background: url("../../img/Button-Slider-right-hover.svg") no-repeat; // TODO - change white
+          }
+        }
+  
+        div.slider-arrow-left {
+          background: url("../images/button-slider-left-md-noct.svg") no-repeat;
+          &:hover {
+            background: url("../images/button-slider-left-hover.svg") no-repeat; // TODO - change white
+          }
+        }
+      }
+    }
+  
+    #footer {
+      color: #ffffff;
+      a {
+        color: #ffffff;
+      }
+    }
+  
+    #create-gifo {
+      .camera-container {
+        border: 1px solid #ffffff;
+        h2 {
+          color:  #5ed7c6;
+        }
+        p {
+          color: #ffffff;
+        }
+      }
+  
+      .footer-create {
+        .create-steps {
+          div.step-icon {
+            border: 1px solid #ffffff;
+            color:#ffffff;
+          }
+        }
+      }
+    }
+  }
+  
+  // desktop styles
+  @media screen and (min-width: 768px) {
+    .dark {
+      ul#menu-container {
+        background-color: #37383c;
+        a {
+          color: #ffffff;
+        }
+  
+        a.create-gifo-icon {
+         /* @include div-icon(54px);*/
+          background: url("../images/CTA-crar-gifo-modo-noc.svg") no-repeat;
+  
+          &:hover {
+            background: url("../images/CTA-crear-gifo-hover-modo-noc.svg")
+              no-repeat;
+          }
+        }
+      }
+    }
+  }
+  
