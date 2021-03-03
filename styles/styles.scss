@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+
+.hidden {
+  display: none;
+}
+@import "main";
+@import "card"; 
+@import "header"; 
+@import "sctprincipal"; 
+@import "footer";
+@import "create";
+@import "spinner";
+@import "dark";
+@import "scts"; 
+@import "scttrending";
+@import "sctcreargifo";
+ 

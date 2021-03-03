@@ -1,0 +1,173 @@
+@import "variables";
+
+.trending {
+  background-color: var(--background_trending);
+  text-align: center;
+  color: var(--purpura);
+  padding-bottom: 82px;
+  .contenedor-trending-button {
+    display: none;
+  }
+  h2 {
+    @include letra(0, $font-montserrat, var(--purpura), 20px, 600, 30px);
+    padding-top: 46px;
+    margin-bottom: 7px;
+  }
+  p {
+    @include letra(0, $font-roboto, var(--negro), 16px, 500, 23px);
+    padding: 9px 100px;
+  }
+  .contenedor-trending {
+    height: 187px;
+    background: none;
+    position: relative;
+    overflow: hidden;
+
+    .contenedor-cards {
+      display: inline-flex;
+      touch-action: none;
+      margin-left: 22px;
+      .card {
+        width: 243px;
+        height: 187px;
+        background: none;
+        margin-right: 22px;
+        img {
+          height: 100%;
+          width: 100%;
+          -o-object-fit: cover;
+          object-fit: cover;
+        }
+        .card-opciones {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 769px) {
+  .trending {
+    p {
+      font-size: 18px;
+    }
+    .contenedor-trending {
+      height: 275px;
+      .contenedor-cards {
+        .card {
+          width: 357px;
+          height: 275px;
+          margin-right: 29px;
+          .card-opciones {
+            text-align: left;
+            display: none;
+            width: 357px;
+            height: 275px;
+            position: absolute;
+            background-color: var(--purpura);
+            opacity: 0.7;
+            .opciones-gif {
+              display: flex;
+              justify-content: flex-end;
+              position: absolute;
+              right: 10px;
+              top: 10px;
+              .opcion-button {
+                width: 32px;
+                height: 32px;
+                opacity: 0.7;
+                background: var(--botones);
+                border-radius: 6px;
+                margin-left: 11px;
+                img {
+                  width: 18px;
+                  height: 15.9px;
+                }
+              }
+              .opcion-button:hover {
+                opacity: 1;
+              }
+            }
+            .opciones-descripcion {
+              position: absolute;
+              left: 18.5px;
+              bottom: 51px;
+              .descripcion {
+                margin: 0;
+                padding: 0;
+                font-family: $font-roboto;
+                color: var(--botones);
+                .user {
+                  font-size: 16px;
+                }
+                .titulo {
+                  font-size: 18px;
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+        }
+        .card:hover .card-opciones {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .trending {
+    .contenedor-trending-button {
+      display: block;
+      border: 1px solid var(--purpura);
+      color: var(--barramenu);
+      background: var(--blanco);
+      cursor: pointer;
+      font-weight: 700;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      z-index: 1;
+      margin-top: 120px;
+    }
+    .contenedor-trending-button:hover {
+      border: 1px solid var(--purpura);
+      color: var(--blanco);
+      background: var(--purpura);
+    }
+    .anterior {
+      left: 5%;
+    }
+    .siguiente {
+      right: 5%;
+    }
+    .contenedor-trending {
+      -webkit-box-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: flex;
+      margin: 2rem auto;
+      overflow: hidden;
+      position: relative;
+      width: 80%;
+      .contenedor-cards {
+        display: -webkit-box;
+        display: flex;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-transition: -webkit-transform 0.25s;
+        transition: -webkit-transform 0.25s;
+        transition: transform 0.25s;
+        transition: transform 0.25s, -webkit-transform 0.25s;
+        .card {
+          img {
+            height: 100%;
+            width: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

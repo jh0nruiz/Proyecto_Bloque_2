@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFOS</title>
+    <link rel="shortcut icon" href="images/icono.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+</head>
+
+<body>
+    <header>
+        <div class="linea"></div>
+        <nav id="navbar" class="sticky">
+            <a class="d-logo" href="index.html">
+                <img src="images/logo-desktop-modo-noc.svg" alt="Logo-GIFOS" class="logo" id="logo" />
+                <h2>GIFOS</h2>
+            </a>
+            <div class="menu">
+                <div id="menu-burguer" class="menu-burger">
+                    <span class="layer -top"></span>
+                    <span class="layer -mid"></span>
+                    <span class="layer -bottom"></span>
+                </div>
+                <ul id="ul-menu">
+                    <li id="liModoMocturno"><a href="#">Modo <span id="sp-tema">nocturno</span>
+                            <p class="linea-ul"></p>
+                        </a></li>
+                    <li><a href="favoritos.html">Favoritos</a>
+                        <p class="linea-ul"></p>
+                    </li>
+                    <li><a href="misgifos.html">Mis GIFOS</a>
+                        <p class="linea-ul"></p>
+                    </li>
+                    <li class="liCrearGifos"><a href="creargifos.html"><img src="./images/button-crear-gifo.svg"
+                                alt="Icon-Favoritos" /></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+       <!-- <section id="section-mygifos class="misgifos">
+            <img src="images/icon-favoritos.svg" alt="Icon-Favoritos" />
+            <h2>Mis GIFOS</h2>
+            <div id="sin-misgifos" class="sin-misgifos hidden">
+                <img src="images/icon-mis-gifos-sin-contenido.svg" alt="Icon-Favoritos" />
+                <h3>¡Anímate a crear tu primer GIFO!</h3>
+            </div>
+            <div id="misgifos-gifs" class="misgifos-gifs hidden">
+            </div>
+        </section> -->
+        <section id="section-mygifos" class="misgifos" >
+            <img class="icon-fav" src="./images/icon-mis-gifos.svg" />
+            <h2 id="heading-mygifos">Mis GIFOS</h2>
+            <div id="container-mygifos" class="images-container"></div>
+            <button id="btn-view-more" class="btn-primary-ghost">VER MÁS</button>
+        </section>
+        <!-- Section Gifos Treding -->
+        <section class="trending">
+            <h2>Trending GIFOS</h2>
+            <p>Mira los últimos GIFOS de nuestra comunidad.</p>
+            <button class="contenedor-trending-button anterior" id="btn-anterior"><</button>
+                    <button class="contenedor-trending-button siguiente" id="btn-siguiente">></button>
+                    <div id="contenedor-trending" class="contenedor-trending">
+                        <div id="contenedor-cards" class="contenedor-cards">
+                        </div>
+                    </div>
+        </section>
+       <!-- <section id="gif-max" class="maximizado hidden"> 
+        </section> -->
+    </main>
+    <footer class="d-footer">
+        <p>Compartir en:</p>
+        <div class="container-icons">
+            <a target="_blank" href="http://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a target="_blank" href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+        <h6>© GIFOS 2020 All Rights Reserved.</h6>
+        <div class="linea"></div>
+    </footer>
+    <div class="bg-primary h-5"></div>
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div id="button-modal-left" class="slider-arrow-left"></div>
+      <div id="modal-img-container" class="img-container"></div>
+      <div id="button-modal-right" class="slider-arrow-right"></div>
+    </div>
+    <!-- Scritps -->
+    <!-- <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>-->
+    <script src="./script/app.js"></script>
+    <script src="./script/helper.js"></script>
+    <script src="./script/modal.js"></script>
+    <script src="./script/card.js"></script>
+    <script src="./script/mygifos.js"></script>
+</body>
+
+</html>

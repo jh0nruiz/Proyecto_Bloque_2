@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFOS</title>
+    <link rel="shortcut icon" href="images/icono.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+</head>
+
+<body>
+    <header>
+        <div class="linea"></div>
+        <nav id="navbar" class="sticky">
+            <a class="d-logo" href="index.html">
+                <img src="images/logo-desktop-modo-noc.svg" alt="Logo-GIFOS" class="logo" id="logo" />
+                <h2>GIFOS</h2>
+            </a>
+            <div class="menu">
+                <div id="menu-burguer" class="menu-burger">
+                    <span class="layer -top"></span>
+                    <span class="layer -mid"></span>
+                    <span class="layer -bottom"></span>
+                </div>
+                <ul id="ul-menu">
+                    <li id="liModoMocturno"><a href="#">Modo <span id="sp-tema">nocturno</span>
+                            <p class="linea-ul"></p>
+                        </a></li>
+                    <li><a href="favoritos.html">Favoritos</a>
+                        <p class="linea-ul"></p>
+                    </li>
+                    <li><a href="misgifos.html">Mis GIFOS</a>
+                        <p class="linea-ul"></p>
+                    </li>
+                    <li class="liCrearGifos"><a href="creargifos.html"><img src="images/button-crear-gifo.svg"
+                                alt="Icon-creargifos" /></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="creargifos" id="create-gifo"> 
+            <article class="div-grabacion">
+                <div class="div-camara">
+                    <img src="./images/camara.svg" alt="Imagen-cámara" class="camara" id="camara" />
+                    <img src="./images/element-luz-camara.svg" alt="Imagen-luz-cámara" class="camara" id="luz-camara" />
+                </div>
+                <div class="div-contenedor">
+                    <div class="div-grabacion">
+                        <div class="div-borders">
+                            <div class="borde-grabacion"></div>
+                            <div class="borde-grabacion"></div>
+                            <div class="borde-grabacion"></div>
+                            <div class="borde-grabacion"></div>
+                        </div>
+                        <!--<div id="div-descripcion" class="div-descripcion">
+                            <h2>Aquí podrás <br> crear tus propios <span>GIFOS</span></h2>
+                            <p>Crea tu GIFO en sólo 3 pasos! <br>(sólo necesitas una cámara para grabar un video)</p>
+                        </div>-->
+                        <div id="camera-container" class="camera-container">
+                            <h2>Aquí podrás crear tus propios <span>GIFOS</span></h2>
+                            <p>¡Crea tu GIFO en sólo 3 pasos!</p>
+                            <p>(sólo necesitas una cámara para grabar un video)</p>
+                          </div>
+                        <video></video>
+                        <img src="" alt="" id="gif-grabado" class="gif-grabado">
+                        <div id="div-subirgifo" class="div-subirgifo" hidden>
+                            <div id="opciones-gifo" class="opciones-gifo" hidden>
+                                <button id="btn-descargar">
+                                    <img src="./images/icon-download.svg" alt="descargar gifo">
+                                </button>
+                                <button id="btn-link">
+                                    <img src="./images/icon-link.svg" alt="copiar enlace">
+                                </button>
+                            </div>
+                            <img src="./images/loader.svg" alt="icono cargando gifo" class="img-subirgifo"
+                                id="img-subirgifo">
+                            <p class="texto-subirgifo" id="texto-subirgifo">Estamos subiendo tu GIFO </p>
+                        </div>
+                    </div>
+                    <div class="footer-create">
+                        <div class="create-steps">
+                            <div id="step-1" class="step-icon">1</div>
+                            <div id="step-2" class="step-icon">2</div>
+                            <div id="step-3" class="step-icon">3</div>
+                            <h3 id="create-label">00:00:00</h3>
+                        </div>
+                        <span></span>
+                       <button id="create-button" class="btn-primary-ghost">COMENZAR</button>
+                            <!--<p id="contador-grabacion" hidden></p>
+                            <button id="btn-repetir" hidden>REPETIR CAPTURA</button>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="div-pelicula">
+                    <img src="images/pelicula.svg" alt="Imagen-película" />
+                </div>
+            </article>
+           <!--<article class="div-lineaseparador"></article>
+            <article class="div-botones">
+                <button id="btn-comenzar">COMENZAR</button>
+                <button id="btn-grabar" hidden>GRABAR</button>
+                <button id="btn-finalizar" hidden>FINALIZAR</button>
+                <button id="btn-subir" hidden>SUBIR GIFO</button>
+            </article> -->
+        </section>
+    </main>
+    <footer class="d-footer">
+        <p>Compartir en:</p>
+        <div class="container-icons">
+            <a target="_blank" href="http://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a target="_blank" href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+        <h6>© GIFOS 2020 All Rights Reserved.</h6>
+        <div class="linea"></div>
+    </footer>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="./script/app.js"></script>
+    <script src="./script/create.js"></script>
+    <script src="./script/helper.js"></script>
+</body>
+
+</html>

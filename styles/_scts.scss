@@ -1,0 +1,390 @@
+@import "variables";
+
+.resultados {
+  background-color: var(--background_general);
+  text-align: center;
+  .linea {
+    background-color: var(--linea);
+    width: 157px;
+    margin: auto;
+    height: 1px;
+  }
+  h2 {
+    text-transform: capitalize;
+    @include letra(0, $font-montserrat, var(--purpura), 25px, 600, 40px);
+    text-align: center;
+    padding: 43px 0 38px 0;
+  }
+  .d-sinresultados {
+    text-align: center;
+  }
+  .img-sinresultados {
+    margin-top: 71px;
+    margin-bottom: 29px;
+    width: 80px;
+    height: 80px;
+  }
+  .text-sinresultados {
+    padding-bottom: 129px;
+    color: var(--turquesa);
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .resultados-gifs {
+    display: grid;
+    grid-gap: 21px;
+    padding: 21px;
+    grid-template-columns: repeat(auto-fill, minmax(156px, auto));
+    grid-auto-rows: 120px;
+    div {
+      background-size: cover;
+      background-position: center;
+      .card-opciones {
+        display: none;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+    }
+  }
+  button {
+    margin-top: 78px;
+    margin-bottom: 78px;
+    @include boton;
+    @include letra(0, $font-montserrat, var(--purpura), 13px, 600, 30px);
+  }
+  button:hover {
+    background-color: var(--purpura);
+    color: var(--botones);
+  }
+}
+
+.favoritos {
+  padding-top: 100px;
+  background-color: var(--background_general);
+  text-align: center;
+  h2 {
+    text-transform: capitalize;
+    @include letra(0, $font-montserrat, var(--purpura), 25px, 600, 40px);
+    text-align: center;
+    padding: 7px 0 46px 0;
+  }
+  .sin-favoritos {
+    img {
+      height: 60px;
+      width: 60px;
+    }
+    h3 {
+      @include letra(0, $font-montserrat, var(--turquesa), 22px, 600, 33px);
+      margin: auto;
+    }
+  }
+  .favoritos-gifs {
+    display: grid;
+    grid-gap: 21px;
+    padding: 21px;
+    grid-template-columns: repeat(auto-fill, minmax(156px, auto));
+    grid-auto-rows: 120px;
+    div {
+      background-size: cover;
+      background-position: center;
+      img {
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.misgifos {
+  padding-top: 100px;
+  background-color: var(--background_general);
+  text-align: center;
+  h2 {
+    text-transform: capitalize;
+    @include letra(0, $font-montserrat, var(--purpura), 25px, 600, 40px);
+    text-align: center;
+    padding: 7px 0 46px 0;
+  }
+  .sin-misgifos {
+    img {
+      height: 60px;
+      width: 60px;
+    }
+    h3 {
+      @include letra(0, $font-montserrat, var(--turquesa), 22px, 600, 25px);
+      margin: auto;
+    }
+  }
+  .misgifos-gifs {
+    display: grid;
+    grid-gap: 21px;
+    padding: 21px;
+    grid-template-columns: repeat(auto-fill, minmax(156px, auto));
+    grid-auto-rows: 120px;
+    div {
+      background-size: cover;
+      background-position: center;
+      img {
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.maximizado {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--blanco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 3000;
+  display: none;
+  .close-button {
+    background: none;
+    position: absolute;
+    right: 9.8%;
+    top: 30.1%;
+  }
+  .gif-maximizado {
+    width: 84.8%;
+    height: 24.5%;
+  }
+  article {
+    margin-top: 2.9%;
+    font-size: 15px;
+    font-family: $font-roboto;
+    width: 84.8%;
+    display: flex;
+    justify-content: space-between;
+    p {
+      margin-bottom: 0;
+    }
+    .titulo {
+      font-family: $font-montserrat;
+      font-weight: 600;
+    }
+    button {
+      opacity: 0.5;
+      border: 1px solid var(--linea);
+      border-radius: 6px;
+      width: 36px;
+      height: 36px;
+      img {
+        width: 20px;
+        height: 18px;
+      }
+    }
+    button:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .resultados {
+    .linea {
+    }
+    h2 {
+    }
+    .img-sinresultados {
+      width: 150px;
+      height: 150px;
+    }
+    .text-sinresultados {
+      padding-bottom: 129px;
+    }
+    .d-sinresultados {
+      text-align: center;
+    }
+    .resultados-gifs {
+      grid-gap: 29px;
+      padding-left: 10%;
+      padding-right: 10%;
+      grid-template-columns: repeat(auto-fill, minmax(260px, auto));
+      grid-auto-rows: 200px;
+      div {
+        position: relative;
+        .card-opciones {
+          text-align: left;
+          display: none;
+          width: 100%;
+          height: 200px;
+          position: absolute;
+          background-color: var(--purpura);
+          opacity: 0.7;
+          .opciones-gif {
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            right: 10px;
+            top: -70px;
+            .opcion-button {
+              width: 32px;
+              height: 32px;
+              opacity: 0.7;
+              background: var(--botones);
+              border-radius: 6px;
+              margin-left: 11px;
+              img {
+                width: 18px;
+                height: 15.9px;
+              }
+            }
+          }
+          .opciones-descripcion {
+            position: absolute;
+            left: 18.5px;
+            bottom: 51px;
+            .descripcion {
+              margin: 0;
+              padding: 0;
+              font-family: $font-roboto;
+              color: var(--botones);
+              .user {
+                font-size: 16px;
+              }
+              .titulo {
+                font-size: 18px;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+      div:hover .card-opciones {
+        display: block;
+      }
+    }
+  }
+  .favoritos {
+    h2 {
+    }
+    .sin-favoritos {
+      img {
+        margin-top: 110px;
+        margin-bottom: 24px;
+        height: 150px;
+        width: 150px;
+      }
+      h3 {
+        font-size: 22px;
+        text-align: center;
+        line-height: 33px;
+        padding-bottom: 137px;
+        width: 431px;
+      }
+    }
+    .favoritos-gifs {
+      grid-gap: 29px;
+      padding-left: 10%;
+      padding-right: 10%;
+      grid-template-columns: repeat(auto-fill, minmax(260px, auto));
+      grid-auto-rows: 200px;
+      div {
+        position: relative;
+        .card-opciones {
+          text-align: left;
+          display: none;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background-color: var(--purpura);
+          opacity: 0.7;
+          .opciones-gif {
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            .opcion-button {
+              width: 32px;
+              height: 32px;
+              opacity: 0.7;
+              background: var(--botones);
+              border-radius: 6px;
+              margin-left: 11px;
+              img {
+                width: 18px;
+                height: 15.9px;
+              }
+            }
+          }
+          .opciones-descripcion {
+            position: absolute;
+            left: 18.5px;
+            bottom: 51px;
+            .descripcion {
+              margin: 0;
+              padding: 0;
+              font-family: $font-roboto;
+              color: var(--botones);
+              .user {
+                font-size: 16px;
+              }
+              .titulo {
+                font-size: 18px;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+      div:hover .card-opciones {
+        display: block;
+      }
+    }
+  }
+  .misgifos {
+    .sin-misgifos {
+      img {
+        margin-top: 110px;
+        margin-bottom: 24px;
+        height: 150px;
+        width: 150px;
+      }
+      h3 {
+        font-size: 22px;
+        text-align: center;
+        line-height: 33px;
+        padding-bottom: 137px;
+        width: 431px;
+      }
+    }
+    .misgifos-gifs {
+      grid-gap: 29px;
+      padding-left: 10%;
+      padding-right: 10%;
+      grid-template-columns: repeat(auto-fill, minmax(260px, auto));
+      grid-auto-rows: 200px;
+    }
+  }
+  .maximizado {
+    .close-button {
+      right: 19.3%;
+      top: 8.6%;
+    }
+    .gif-maximizado {
+      width: 48.3%;
+      height: 50.1%;
+    }
+    article {
+      width: 48.3%;
+    }
+  }
+}

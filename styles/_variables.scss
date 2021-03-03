@@ -1,0 +1,48 @@
+//TEMA DIURNO
+:root {
+  --menu: rgba(87, 46, 229, 0.9);
+  --barramenu: #572ee5;
+  --background_trending: #f3f5f8;
+  --purpura: #572ee5;
+  --blanco: white;
+  --turquesa: #50e3c2;
+  --gris: #cdd6e0;
+  --negro: #000000;
+  --background_general: #ffffff;
+  --linea: #9cafc3;
+  --menudestokp: white;
+  --botones: white;
+}
+
+//TEMA NOCTURNO
+[data-theme="dark"] {
+  --menudestokp: #37383c;
+  --menu: #000000;
+  --barramenu: #000000;
+  --background_trending: #222326;
+  --purpura: #ffffff;
+  --gris: white;
+  --negro: white;
+  --background_general: #37383c;
+  --botones: black;
+}
+
+$font-roboto: "Roboto", sans-serif;
+$font-montserrat: "Montserrat", sans-serif;
+
+@mixin letra($spacing, $font, $color, $size, $weigth, $line) {
+  letter-spacing: $spacing;
+  font-family: $font;
+  color: $color;
+  font-size: $size;
+  font-weight: $weigth;
+  line-height: $line;
+}
+
+@mixin boton {
+  background: none;
+  border-radius: 25px;
+  border: 1px solid var(--purpura);
+  width: 127px;
+  height: 50px;
+}

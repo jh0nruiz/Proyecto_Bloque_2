@@ -1,0 +1,33 @@
+<svg width="63.00000000000001" height="60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+ <title>logo-desktop-modo-noc</title>
+ <desc>Created with Sketch.</desc>
+ <defs>
+  <polygon points="0.494619458 0.526112695 58.2715334 0.526112695 58.2715334 24.1695652 0.494619458 24.1695652" id="path-1"/>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="602" width="802" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g fill-rule="evenodd" fill="none" id="GIFOS">
+   <g id="16-UI-Kit-Modo-Nocturno">
+    <g id="logo-desktop-modo-noc">
+     <g id="Group-5">
+      <polygon points="0,-0.000244140625 0,59.1083984375 59.10863494873047,59.1083984375 59.10863494873047,46.4423828125 54.88658142089844,46.4423828125 54.88658142089844,54.886474609375 4.2220458984375,54.886474609375 4.2220458984375,4.221923828125 42.22045135498047,4.221923828125 42.22045135498047,16.887939453125 54.88658142089844,16.887939453125 54.88658142089844,25.3330078125 59.10863494873047,25.3330078125 59.10863494873047,12.666015625 46.44249725341797,-0.000244140625 " fill="#5ED7C6" id="Fill-1"/>
+      <g id="Group-4">
+       <mask transform="translate(9,20) translate(158,2414) translate(-158,-2414) " id="mask-2">
+        <use id="svg_1" xlink:href="#path-1"/>
+       </mask>
+       <g id="Clip-3"/>
+       <text x="9" y="20" fill="#FFFFFF" font-weight="700" font-size="18" font-family="Roboto-Black, Roboto" mask="url(#mask-2)" id="GIFOS">
+        <tspan id="svg_2" y="21" x="3">GIFOS</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
