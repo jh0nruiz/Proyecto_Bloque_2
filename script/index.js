@@ -7,6 +7,7 @@ let lupa_busqueda = document.getElementById('img-lupa');
 let lupas_icon = document.getElementsByClassName('input_img');
 let param_busqueda;
 let offset = 0;
+let btnCerrar = document.getElementById('cerrarBusqueda');
 
 //Elementos del div resultados
 let titulo = document.getElementById('titulo-resultados');

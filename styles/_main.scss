@@ -141,9 +141,23 @@ body {
         width: 25px;
         margin-right: 20px;
         background: url("./images/icon-search.svg") no-repeat;
+        display: none;
+        &.search {
+          /*background: url("./images/close.svg") no-repeat;*/
+          height: 15px;
+          display: block;
+        }
+      }
+      div.icon-search2 {
+        /*@include div-icon(20px);*/
+        width: 25px;
+        margin-right: 20px;
+        background: url("./images/icon-search.svg") no-repeat;
+        display: inline-flex;
         &.search {
           background: url("./images/close.svg") no-repeat;
           height: 15px;
+          display: none;
         }
       }
     }

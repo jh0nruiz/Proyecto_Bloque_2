@@ -4,7 +4,7 @@
     <title>icon-busqueda-sin-resultado</title>
     <desc>Created with Sketch.</desc>
     <g id="GIFOS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="04-Búsqueda-sin-resultados" transform="translate(-645.000000, -962.000000)">
+        <g id="04-Busqueda-sin-resultados" transform="translate(-645.000000, -962.000000)">
             <g id="icon-busqueda-sin-resultado" transform="translate(645.000000, 962.000000)">
                 <circle id="Oval-3" fill="#F3F5F8" fill-rule="nonzero" cx="75" cy="75" r="75"></circle>
                 <g id="ouch" transform="translate(38.000000, 37.000000)" fill="#50E3C2">
@@ -26,10 +26,7 @@
                     <polygon id="Fill-20" points="59.4951087 38.2765581 59.4951087 33.1727293 53.8068328 33.1727293 53.8068328 38.2765581 51.2423501 38.2765581 51.2423501 26.1182862 53.8068328 26.1182862 53.8068328 30.8942281 59.4951087 30.8942281 59.4951087 26.1182862 62.0771776 26.1182862 62.0771776 38.2765581"></polygon>
                 </g>
                 <polygon id="Fill-1" fill="#F3F5F8" points="81.0002582 89 75.0005164 89 68.9997418 89 63 89 63 89.0034425 63 95 68.9997418 95 75.0005164 95 81.0002582 95 87 95 87 89.0034425 87 89"></polygon>
-                <polygon id="Fill-2" fill="#50E3C2" points="73 93 77 93 77 89 73 89"></polygon>
                 <polygon id="Fill-2-Copy" fill="#50E3C2" points="73 42 77 42 77 38 73 38"></polygon>
-                <polygon id="Fill-2-Copy-2" fill="#50E3C2" points="73 59 77 59 77 55 73 55"></polygon>
-                <polygon id="Fill-3" fill="#50E3C2" points="74 89 77 89 77 86 74 86"></polygon>
             </g>
         </g>
     </g>

@@ -113,10 +113,22 @@ body {
         /*@include div-icon(20px);*/
         width: 25px;
         margin-right: 20px;
-        background: url("./images/icon-search.svg") no-repeat; }
+        background: url("./images/icon-search.svg") no-repeat;
+        display: none; }
         #section-searcher .search-container .input-container div.icon-search.search {
+          /*background: url("./images/close.svg") no-repeat;*/
+          height: 15px;
+          display: block; }
+      #section-searcher .search-container .input-container div.icon-search2 {
+        /*@include div-icon(20px);*/
+        width: 25px;
+        margin-right: 20px;
+        background: url("./images/icon-search.svg") no-repeat;
+        display: inline-flex; }
+        #section-searcher .search-container .input-container div.icon-search2.search {
           background: url("./images/close.svg") no-repeat;
-          height: 15px; }
+          height: 15px;
+          display: none; }
     #section-searcher .search-container > span {
       display: none;
       border-bottom: 1px solid #9cafc3;
@@ -650,7 +662,9 @@ header {
         .principal .d-busqueda .d-input button .input_img {
           width: 20px;
           height: 20px;
-          cursor: pointer; }
+          cursor: pointer;
+          align-items: flex-start;
+          display: none; }
         .principal .d-busqueda .d-input button #cerrar-busqueda {
           display: none; }
       .principal .d-busqueda .d-input input {

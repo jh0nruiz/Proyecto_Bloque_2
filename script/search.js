@@ -85,7 +85,6 @@ async function addGifosResult(term, offset) {
     console.error(error);
   }
 }
-
 /**********************************
  * Add Suggested words to Searcher
  **********************************/
