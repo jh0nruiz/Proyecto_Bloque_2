@@ -1,5 +1,6 @@
 const inputSearch = document.getElementById("input-search");
 const iconSearch = document.getElementById("icon-search");
+const iconSearch2 = document.getElementById("icon-search2");
 
 const suggestedContainer = document.getElementById("suggested-container");
 const imageHeader = document.getElementById("img-header");
@@ -91,6 +92,7 @@ async function addGifosResult(term, offset) {
 inputSearch.addEventListener("input", async (e) => {
   if (e.target.value.length > 1) {
     addClass(iconSearch, "search");
+    addClass(iconSearch2, "search2");
     addClass(imageHeader, "hidden");
     addClass(sectionTrendingTerms, "hidden");
 
@@ -118,6 +120,11 @@ inputSearch.addEventListener("input", async (e) => {
         inputSearch.value = "";
         clearSearch();
       });
+      iconSearch2.addEventListener("click", () => {
+        containerGifosResult.innerHTML = "";
+        addGifosResult(inputSearch.value);
+        sectionResults.scrollIntoView({ behavior: "smooth" });
+      });
     }
   } else {
     clearSearch();
@@ -132,6 +139,7 @@ function clearSearch() {
   removeClass(sectionTrendingTerms, "hidden");
   removeClass(imageHeader, "hidden");
   removeClass(iconSearch, "search");
+  removeClass(iconSearch2, "search2");
 }
 
 inputSearch.addEventListener("keydown", (e) => {

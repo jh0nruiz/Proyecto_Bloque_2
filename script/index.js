@@ -1,4 +1,3 @@
-
 //Elementos del buscador (input)
 let input_busqueda = document.getElementById('in-busqueda');
 let btn_busqueda = document.getElementById('btn-buscar');
@@ -7,7 +6,7 @@ let lupa_busqueda = document.getElementById('img-lupa');
 let lupas_icon = document.getElementsByClassName('input_img');
 let param_busqueda;
 let offset = 0;
-let btnCerrar = document.getElementById('cerrarBusqueda');
+let cerrar = document.getElementById("cerrarBusqueda");
 
 //Elementos del div resultados
 let titulo = document.getElementById('titulo-resultados');
@@ -33,7 +32,7 @@ async function cargarSugerencias() {
         if (sugerenciasBusqueda.data.length > 0) {
             let items_lista = "";
             for (let i = 0; i < sugerenciasBusqueda.data.length; i++) {
-                let items = `<li><img src="images/icon-search-gris.svg" alt="icon-search"/><p>${sugerenciasBusqueda.data[i].name}</p></li>`;
+                let items = `<li><img src="../images/icon-search-gris.svg" alt="icon-search"/><p>${sugerenciasBusqueda.data[i].name}</p></li>`;
                 items_lista = items_lista + items;
             }
             lista_sugerencias.innerHTML = items_lista;
