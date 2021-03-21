@@ -39,7 +39,7 @@ function gifoHover(imgContainer, gifo, options) {
 
       favoriteIcon.addEventListener("click", () => {
         if (getFavorite(gifo)) {
-          favoriteIcon.classList.remove("saved");
+          favoriteIcon.classList.remove("Remove");
         } else {
           favoriteIcon.classList.add("saved");
         }

@@ -454,7 +454,7 @@ header {
     header nav .d-logo img {
       height: 49px;
       width: 56px;
-      margin: 29px 263.2px 17px 22px; }
+      margin: 29px 100.2px 17px 22px; }
     header nav .d-logo h2 {
       position: absolute;
       z-index: 2;
@@ -1100,7 +1100,7 @@ header {
     .dark ul#menu-container a {
       color: #ffffff; }
     .dark ul#menu-container a.create-gifo-icon {
-      /* @include div-icon(54px);*/
+      /*@include div-icon(54px);*/
       background: url("../images/CTA-crar-gifo-modo-noc.svg") no-repeat; }
       .dark ul#menu-container a.create-gifo-icon:hover {
         background: url("../images/CTA-crear-gifo-hover-modo-noc.svg") no-repeat; } }

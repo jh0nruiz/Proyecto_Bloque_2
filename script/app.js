@@ -216,9 +216,22 @@ async function maximizarGif(idGif) {
         });
     }
 };
+/*---------------validar si exite_JRR_____*/
+
+function eliminarFavoritos(idGifFavorito) {
+    let indiceFavorito = listado_favoritos.indexOf(idGifFavorito);
+    listado_favoritos.splice(indiceFavorito, 1);
+    localStorage.setItem('gifsFavoritos', JSON.stringify(listado_favoritos));
+    cargarFavoritos();
+}
 
 /*_____________________AGREGAR FAVORITOS AL LOCAL STORAGE_____________________*/
 function agregarFavoritos(nuevoGifFavoritoId) {
+    /*let indiceFavorito = listado_favoritos.indexOf(nuevoGifFavoritoId);
+    listado_favoritos.get(indiceFavorito, 1);
+    localStorage.setItem('gifsFavoritos', JSON.stringify(listado_favoritos));
+    cargarFavoritos();*/
+    /*++++*/
     console.log(listado_favoritos);
     listado_favoritos.push(nuevoGifFavoritoId);
     localStorage.setItem('gifsFavoritos', JSON.stringify(listado_favoritos));

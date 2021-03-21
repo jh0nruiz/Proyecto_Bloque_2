@@ -17,13 +17,13 @@ async function cargarFavoritos(offset) {
                 div.innerHTML = `<div id="${gifsFavoritos.data[i].id}" class="card-opciones">
                                     <div class="opciones-gif">
                                         <button id="btn-favorito" class="opcion-button">
-                                            <img src="/images/icon-favoritos-fav.svg" alt="icono-favorito">
+                                            <img src="./images/icon-favoritos-fav.svg" alt="icono-favorito">
                                         </button>
                                         <button id="btn-descargar" class="opcion-button">
-                                            <img src="images/icon-download.svg" alt="icono-descarga">
+                                            <img src="./images/icon-download.svg" alt="icono-descarga">
                                         </button>
                                         <button id="btn-max" class="opcion-button">
-                                            <img src="images/icon-max.svg" alt="icono-maximizar">
+                                            <img src="./images/icon-max.svg" alt="icono-maximizar">
                                         </button>
                                     </div>
                                     <div class="opciones-descripcion">
